@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Form</title>
+      <style>
+   .flex-container {
+   display: flex;
+   background-color: bisque;
+   border: solid rgb(233, 17, 125);
+   border-radius: 2px;
+   padding: 45px;   
+   margin: 30px;
+      flex-basis: content;
+   flex-direction:column;    
+   row-gap: 10px; 
+   width: 90%;
+   align-items: center;
+
+}
+
+label {
+  display: block; 
+  float: left; 
+  width: 200px; 
+  color: rgb(30, 30, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  
+   
+}
+
+ .aligned {
+        vertical-align: middle;
+       
+}
+
+.button {
+      margin-left: 200px;
+      width: 180px;
+      background-color: rgb(145, 130, 214);
+  }
+ h1 {
+     color:rgb(28, 103, 243);
+     align-self: center;
+ }
+
+
+       </style>
+       <body>
+          <script>
+            
+          </script>
+
+        <div style="overflow-x:auto;">
+
+         
+            <form id="myform">
+               
+            <div class="flex-container">
+                <h1>Contact Form</h1>
+                <br> <br>
+              <div>
+                <label for="fname">First name </label>  
+                <input  id="fname" name="fname" width="50px"></input>
+              </div>
+              <div>
+             <label for="lname">Last name</label>  <input id="lname" name="lname"></input>
+              </div>
+              <div>
+                <label for="emailid">Email ID</label>  <input id="emailid" name="emailid"></input>
+                 </div>
+                 <div>
+                    <label for="phone">Phone</label>  <input id="phone" name="phone"></input>
+                     </div>
+
+              <div>
+            <label for="address">Address</label>   
+              <input id="address" name="address"></input>
+            </div>
+            <div>
+            <label for="pincode">Pincode</label> 
+              <input  id="pincode"></input> 
+            </div>
+             <div class="gender">
+            <label for="gender">Gender</label> 
+             
+              <input type ="radio" name="gender"> Male</input>
+                                               <input type="radio"  name="gender">Female</input>
+                                                                   </div>                            
+            
+              <div>
+                 <label for="state">State </label>  <input id="state" name="state"></input>
+            </div>
+            <div>
+               <label for="country">Country </label>  
+               <input id="country" name="country"></input>
+            </div>
+                
+            <div>
+              <label></label>
+            <input type="button" onclick="{alert('Your Information is Saved!')}" value="Submit"  class="button">
+            <label></label>
+              </div>
+            </form>  
+            </div>
+            <br>
+            <br>
+           
+       </body>
+
+       </head>
+  
